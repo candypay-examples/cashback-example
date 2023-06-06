@@ -15,7 +15,7 @@ app.use(
   })
 );
 
-app.post("/cashback", async (req: Request, res: Response) => {
+app.post("/", async (req: Request, res: Response) => {
   const headers = req.headers;
   const payload = req.body;
   console.log("Payload data:", payload); // complete payment data
